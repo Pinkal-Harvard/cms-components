@@ -1,0 +1,8 @@
+{
+  "name": "cms-components",
+  "version": "1.0.0",
+  "description": "CMS header/footer injectable components",
+  "scripts": {
+    "build": "node build.js"
+  }
+}

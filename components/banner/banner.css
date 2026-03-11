@@ -1,0 +1,24 @@
+.cms-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 2rem;
+  background: #e63946;
+  color: #fff;
+  font-size: 0.9rem;
+}
+.cms-banner__text a {
+  color: #fff;
+  font-weight: 600;
+}
+.cms-banner__close {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  line-height: 1;
+}
+.cms-banner.hidden {
+  display: none;
+}

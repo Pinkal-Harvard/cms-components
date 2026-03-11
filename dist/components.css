@@ -1,0 +1,127 @@
+/* === banner === */
+.cms-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 2rem;
+  background: #e63946;
+  color: #fff;
+  font-size: 0.9rem;
+}
+.cms-banner__text a {
+  color: #fff;
+  font-weight: 600;
+}
+.cms-banner__close {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  line-height: 1;
+}
+.cms-banner.hidden {
+  display: none;
+}
+
+
+/* === navigation === */
+.cms-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: #1a1a2e;
+  color: #fff;
+  position: relative;
+}
+.cms-nav__logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+.cms-nav__links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.cms-nav__links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+.cms-nav__links a:hover {
+  color: #fff;
+}
+.cms-nav__hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+.cms-nav__hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #fff;
+  transition: all 0.3s;
+}
+@media (max-width: 768px) {
+  .cms-nav__hamburger { display: flex; }
+  .cms-nav__links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #1a1a2e;
+    padding: 1rem 2rem;
+    gap: 1rem;
+    z-index: 100;
+  }
+  .cms-nav__links.open { display: flex; }
+}
+
+
+/* === popup === */
+.cms-popup-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+.cms-popup-overlay.active {
+  display: flex;
+}
+.cms-popup {
+  background: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+.cms-popup-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  line-height: 1;
+}
+
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CMS Components Demo</title>
+  <link rel="stylesheet" href="dist/components.css">
+</head>
+<body style="margin:0; font-family: sans-serif;">
+
+  <!-- Banner -->
+  <div class="cms-banner">
+    <span class="cms-banner__text">🚀 New feature launched! <a href="#">Learn more</a></span>
+    <button class="cms-banner__close">✕</button>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="cms-nav">
+    <a href="#" class="cms-nav__logo">MyBrand</a>
+    <button class="cms-nav__hamburger">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="cms-nav__links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page content -->
+  <main style="padding: 3rem 2rem; text-align:center;">
+    <h1>CMS Components Demo</h1>
+    <p>Single <code>dist/components.css</code> + <code>dist/components.js</code> — all components included.</p>
+    <button data-popup-target="demo-popup"
+      style="padding:0.75rem 1.5rem; background:#1a1a2e; color:#fff; border:none; border-radius:6px; cursor:pointer; font-size:1rem; margin-top:1rem;">
+      Open Popup
+    </button>
+  </main>
+
+  <!-- Popup -->
+  <div class="cms-popup-overlay" id="demo-popup">
+    <div class="cms-popup">
+      <button class="cms-popup-close">✕</button>
+      <h2>Hello from Popup! 👋</h2>
+      <p>This popup is driven by <code>components/popup/popup.js</code>.<br>Dismiss by clicking ✕ or clicking outside.</p>
+    </div>
+  </div>
+
+  <script src="dist/components.js"></script>
+</body>
+</html>
